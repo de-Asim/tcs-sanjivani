@@ -1,0 +1,78 @@
+::-webkit-input-placeholder{
+    color: rgb(17, 107, 114);
+}
+#parentCon{
+    /* border: 1px solid yellow; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    color: white;
+    background-color: rgba(255, 255, 255, 0.171);
+    width: 25rem;
+    margin:3rem auto 0 auto;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+#employeeForm{
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+#dropdown{
+    outline: none;
+    padding: 0.3rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.dropdownElements{
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.Btn{
+    color:white;
+    background-color: rgb(17, 107, 114);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+.Btn:hover{
+    background-color:rgb(28, 118, 124) ;
+}
+#assignBox{
+    display: none;
+}
+#setTaskForm{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#setTaskInput{
+    background-color: rgba(255, 255, 255, 0.445);
+    border: none;
+    border-bottom: 1px solid rgb(17, 107, 114);
+    outline: none;
+    color: rgb(28, 118, 124);
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+    width: 100%;
+}

@@ -1,0 +1,25 @@
+.submitForm{
+    width: 30rem;
+    margin: auto;
+}
+#parentCon{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.171);
+    width: fit-content;
+    margin:3rem auto 0 auto;
+    padding: 2rem;
+}
+#greet{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.Btn{
+    text-transform: uppercase;
+}

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+.navName{
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    margin-top: 2rem;
+    font-family: 'Courgette', cursive;
+}
