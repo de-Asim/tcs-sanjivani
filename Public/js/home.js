@@ -20,6 +20,12 @@ validateForm=()=>{
         return false;
     }
 }
+removeWarning=(e)=>{
+    if(e!=null && e!=''){
+        let warning = document.getElementById('warning');
+        warning.innerHTML=``;
+    }
+}
 
 
 submitBtn.addEventListener('click',()=>{
@@ -28,7 +34,7 @@ submitBtn.addEventListener('click',()=>{
     const assignBox = document.getElementById('assignBox');
     assignBox.innerHTML=`<div class="header"><span id='goback'><i class="fas fa-arrow-left"></i></span>Please assign a task to Mr/Ms. ${selectedEmployee}</div>
     <form name="setTaskForm" id="setTaskForm" action='/submit' method="post" onsubmit="return validateForm()">
-        <textarea name="setTaskInput" id="setTaskInput" cols="" rows="4" placeholder="Describe the task here:"></textarea>
+        <textarea name="setTaskInput" id="setTaskInput" cols="" rows="4" onchange="removeWarning(this.value)" placeholder="Describe the task here:"></textarea>
         <div id = 'warning'></div>
         <button type="submit" id="setTaskBtn" class="Btn">Assign Task</button>
     </form>`;

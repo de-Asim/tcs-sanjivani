@@ -12,7 +12,8 @@
 </head>
 
 <body>
-  {{>navbar}}
+  {{!-- {{>navbar}} --}}
+  <div id="grandParentCon">
   <div id="parentCon">
     <div id="greet"></div>
     <form name="submitForm" class="submitForm" method="post" action="/success" onsubmit="return validateForm()">
@@ -22,6 +23,7 @@
       <button class="Btn" type="submit">submit</button>
       <div id="warning"></div>
     </form>
+  </div>
   </div>
 </body>
 <script src="js/submit.js"></script>
