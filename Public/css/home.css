@@ -19,6 +19,18 @@
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
+.header span{
+    /* background-color: red; */
+    display: inline-grid;
+    place-items: center;
+    margin-right: 1rem;
+    border: 5px solid rgb(17, 107, 114);
+    border-radius: 50%;
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
 #employeeForm{
     display: flex;
     flex-direction: column;
@@ -75,4 +87,13 @@ a{
     text-decoration: none;
     color:white;
     width: 100%;
+}
+#warning{
+    color: red;
+    font-size: 0.7rem;
+}
+@media screen and (max-width:500px) {
+    #parentCon{
+        margin-top: 7rem;
+    }
 }

@@ -5,23 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Success - tcs sanjivani</title>
     <style>
         .successMsg{
             color: white;
             text-align: center;
             margin-top: 5rem;
-            font-size: 1.3rem;
+            font-size: 1rem;
             text-transform: capitalize;
+            font-family: 'Poppins', sans-serif;
         }
         .successMsg span{
             display: block;
             font-size: 5rem;
+            font-family: 'Comforter Brush', cursive;
         }
+        .gotohome{
+            margin-top: 2rem;
+            text-align: center;
+            pointer-events: none;
+        }
+        .gotohome a{
+            text-decoration: none;
+        }
+        .gotohome a i{
+            pointer-events: all;
+            height: 4rem;
+            width: 4rem;
+            display: grid;
+            place-items: center;
+            color: rgb(28, 118, 124);
+            margin: auto;
+            border:5px solid rgb(28, 118, 124);
+            border-radius: 50%;
+            font-size: 2rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    @media screen and (max-width:768px) {
+        .successMsg{
+            margin-top: 7rem;
+        }
+    .successMsg span{
+        font-size:4rem;
+    }
+    }
     </style>
+
 </head>
 <body>
     {{>navbar}}
     <div class="successMsg"><span>Congratulations</span>you have successfully submited your task.</div>
+    <div class="gotohome"><a href="/"><i class="fas fa-arrow-left"></i></a></div>
 </body>
 </html>
